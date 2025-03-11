@@ -1,0 +1,382 @@
+/*
+  File Name: index.css
+  Student Name: Xiaomin Guo
+  Student ID: 301495284
+  Date: February 2, 2025  
+*/
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --clr-purple: hsla(252, 66%, 62%, 1);
+  --clr-yellow: hsla(28, 89%, 67%, 1);
+  --clr-pink: hsla(0, 79%, 79%, 1);
+  --clr-red: hsla(7, 77%, 66%, 1);
+  --clr-cyan: hsla(172, 46%, 57%, 1);
+  --clr-ruby: hsla(314, 46%, 23%, 1);
+  --clr-black: hsla(0, 0%, 1%, 1);
+  --clr-brown: hsla(30, 5%, 45%, 1);
+  --clr-cream: hsla(30, 100%, 97%, 1);
+
+  --fs-body: 18px;
+  --fs-h1: 56px;
+  --fs-h2: 40px;
+  --fs-h3: 32px;
+
+  --ff-body: "Plus Jakarta Sans";
+  --ff-fallback: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.grid {
+  display: grid;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+nav {
+  float: right;
+  font-size: x-large;
+}
+
+.bg {
+  position: absolute;
+  top: -4em;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100px;
+}
+
+.layout-header {
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+
+.layout-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.layout-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+
+.layout-title {
+  margin: 0;
+}
+
+.layout-nav-links {
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.layout-nav-links a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.layout-nav-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.home-container {
+  margin-top: 100px;
+  padding: 20px;
+  width: 100%;
+}
+
+.home-introName {
+  color: Blue;
+}
+
+.home-introContent {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.home-introPara {
+  font-size: 40px;
+  font-weight: 100;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.home-link-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+.home-link-buttons button {
+  padding: 10px 20px;
+  margin: 0px 20px;
+  font-size: 30px;
+  border: none;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home-link-buttons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.about-introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-head-portrait {
+  max-width: 50%;
+}
+
+.about-head-portrait img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+
+.project-head-portrait img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+
+.service-head-portrait img {
+  width: 480px;
+  height: 480px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.about-introPara {
+  font-size: 40px;
+  font-weight: 100;
+  max-width: 25%;
+  padding-left: 80px;
+  text-align: justify;
+}
+
+.service-container {
+  max-width: 71.75rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 11.375rem 9.875rem;
+  gap: 1.5rem;
+
+  list-style: none;
+
+  padding: unset;
+  margin-block: 4.9rem;
+}
+
+.categories .category {
+  display: flex;
+  align-items: flex-end;
+  padding: 1.6rem;
+
+  color: white;
+
+  line-height: 1.1;
+  font-size: 24px;
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  background-repeat: no-repeat;
+  background-position: calc(100% - 24px) 24px;
+}
+
+.categories .category:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+
+  background-color: var(--clr-purple);
+  background-image: url(../src/assets/pattern-graphic-design.svg);
+}
+
+.categories .category:nth-child(2) {
+  background-color: var(--clr-yellow);
+  background-image: url(../src/assets/pattern-ui-ux.svg);
+}
+
+.categories .category:nth-child(3) {
+  background-color: var(--clr-pink);
+  background-image: url(../src/assets/pattern-apps.svg);
+}
+
+.categories .category:nth-child(4) {
+  grid-column: span 2;
+
+  background-color: var(--clr-cyan);
+  background-image: url(../src/assets/pattern-photography.svg);
+}
+
+.categories .category:nth-child(5) {
+  grid-column: span 2;
+
+  background-color: var(--clr-red);
+  background-image: url(../src/assets/pattern-illustrations.svg);
+}
+
+.categories .category:nth-child(6) {
+  grid-column: span 2;
+
+  background-color: var(--clr-ruby);
+  background-image: url(../src/assets/pattern-motion-graphics.svg);
+}
+
+#contact-form-body {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+label {
+  font-size: xx-large;
+}
+
+input {
+  font-size: larger;
+  height: 40px;
+}
+
+.contact-form-submit {
+  padding: 10px 0px;
+  margin: 0;
+  font-size: 30px;
+  border: none;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form-submit:hover {
+  background-color: #0056b3;
+}
+
+p,
+a {
+  font-size: x-large;
+  text-align: center;
+}
+
+.contact-container {
+  font-size: 20px;
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info p {
+  text-align: left;
+}
+
+.contact-form {
+  width: 55%;
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    right: -20vw;
+  }
+}
